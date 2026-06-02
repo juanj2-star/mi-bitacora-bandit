@@ -34,3 +34,15 @@ The password you are looking for is: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 \- \*\*Resultado\*\*: Contraseña extraída con éxito del archivo `readme`.
 
+
+bandit1@bandit:~$ ls
+-
+bandit1@bandit:~$ cat ./-
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+bandit1@bandit:~$
+
+## Nivel 1 -> 2
+- **Objetivo**: Leer un archivo cuyo nombre es `-`.
+- **Comando clave**: `cat ./-`
+- **Lección aprendida**: En Linux, el símbolo `-` al inicio de un nombre de archivo suele interpretarse como un parámetro (opción). Al usar `./`, forzamos al sistema a tratarlo como un archivo local dentro del directorio actual, evitando errores de sintaxis.
+
